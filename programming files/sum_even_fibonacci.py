@@ -1,3 +1,4 @@
+# Fibonacci sequence that keeps on adding to an even sum
 a, b = 0, 1
 sum_even = 0
 while b < 4000000:
