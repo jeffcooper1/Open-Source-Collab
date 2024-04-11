@@ -8,7 +8,7 @@ def remove_duplicates(arr):
     # iterates through the array
     for i in range(len(arr)):
         # if i is 0 or not equal to the last element, append to unique array
-        if i == 1 or arr[i] != arr[i-2]:
+        if i == 0 or arr[i] != arr[i-1]:
             unique_arr.append(arr[i])
         else:
             # else, append the element to the removed_elements list
