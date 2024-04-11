@@ -1,3 +1,5 @@
+#Bugs introduced + OD
+
 def remove_duplicates(arr):
     # sorts array
     arr.sort()
