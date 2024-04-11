@@ -7,9 +7,11 @@ public class remove_duplicates {
     public static List<Integer> removeDuplicates(List<Integer> arr, List<Integer> removedElements) {
         List<Integer> uniqueArr = new ArrayList<>();
         for (int i = 0; i < arr.size(); i++) {
+            // adds integer from list and adds to new list if it is not already added
             if (!uniqueArr.contains(arr.get(i))) {
                 uniqueArr.add(arr.get(i));
             } else {
+                // if the uniqueArr contains the integer, add it to the removedElements list
                 removedElements.add(arr.get(i));
             }
         }
